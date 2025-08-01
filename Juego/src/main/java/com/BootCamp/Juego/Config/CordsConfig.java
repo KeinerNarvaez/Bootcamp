@@ -14,7 +14,7 @@ public class CordsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
 
-        config.addAllowedOrigin("localhost:8080");
+        config.addAllowedOrigin("http://127.0.0.1:3000");
 
         config.addAllowedMethod("GET");
         config.addAllowedMethod("POST");

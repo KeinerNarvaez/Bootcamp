@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnicard</title>
     <link rel="stylesheet" href="./assest/css/style.css">
     <link rel="stylesheet" href="./assest/bootstrap-5.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assest/image/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="contenido">
-    <div class="titulo">
-    <div class="logo">
-        <img src="./assest/image/logo.png" width="20%" alt="">
-    </div>
-    </div>            
-    <div class="cajaCantidad">
-        <div class="cantidad flow">
-            <h1>Cantidad de jugadores:</h1>
-            <input type="number" id="number" min="2" max="7" value="2">
+        <div class="titulo">
+            <div class="logo">
+                <img src="./assest/image/logo.png" width="20%" alt="">
+            </div>
         </div>
-        <div class="flow">
-            <div class="jugadores" id="jugadores">
-            <h5>jugador <span>1</span></h5>
-            <input type="text" minlength="6" maxlength="10">
-            <h5>jugador <span>2</span></h5>
-            <input type="text" minlength="6" maxlength="10">
-        </div>
-        <div class="jugar">
-            <h1 id="jugar">jugar</h1>
-        </div>
+        <div class="cajaCantidad">
+            <div class="cantidad flow">
+                <h1>Cantidad de jugadores:</h1>
+                <input type="number" id="number" min="2" max="7" value="2">
+            </div>
+            <div class="flow">
+                <div class="jugadores" id="jugadores">
+                    <h5>jugador <span>1</span></h5>
+                    <input type="text" minlength="6" maxlength="10" placeholder="Ingrese Nombre de Usuario" id="inputName1">
+                    <h5>jugador <span>2</span></h5>
+                    <input type="text" minlength="6" maxlength="10" placeholder="Ingrese Nombre de Usuario" id="inputName2">
+                </div>
+            </div>
+            <div class="jugar">
+                <h1 id="jugar">jugar</h1>
+            </div>
         </div>
 
     </div>
     </div>
 
-<script src="./assest/js/index.js"></script>
+    <script src="./assest/js/index.js"></script>
 </body>
+
 </html>

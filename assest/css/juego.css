@@ -35,6 +35,7 @@ body {
 .card{
     cursor: pointer;
     padding: 1%;
+    
 }
 .headCard{
     border:1px solid;
@@ -73,7 +74,141 @@ body {
 }
 .cards{
     position: fixed;
-    display: flex;
+    top: 500px;
+    left: 500px;
 }
-
-
+.data{
+    color: #ffffff;
+    font-family: bangers;
+    position: fixed;
+    top: 600px;
+    left: 100px;
+}
+.data h1{
+    font-size: 100px;
+}
+.user1{
+    font-family: Baloo Tammudu;
+    background: black;
+    width: 150px;
+    border-radius: 1pc;
+    margin-left: 17%;
+}
+.user1 h5{
+    padding: 10%;
+    text-align: center;
+}
+.user2{
+    font-family: Baloo Tammudu;
+    background: black;
+    width: 150px;
+    border-radius: 1pc;
+    
+}
+.user2 h5{
+    padding: 10%;
+    text-align: center;
+}
+.user3{
+    font-family: Baloo Tammudu;
+    background: black;
+    width: 150px;
+    border-radius: 1pc;
+    margin-left: 7%;
+    
+}
+.user3 h5{
+    padding: 10%;
+    text-align: center;
+}
+.user4{
+    font-family: Baloo Tammudu;
+    background: black;
+    width: 150px;
+    border-radius: 1pc;
+    margin-left: 7%;
+    
+}
+.user4 h5{
+    padding: 10%;
+    text-align: center;
+}
+.user5{
+    font-family: Baloo Tammudu;
+    background: black;
+    width: 150px;
+    border-radius: 1pc;
+    margin-left: 6%;
+}
+.user5 h5{
+    padding: 10%;
+    text-align: center;
+}
+.user6{
+    font-family: Baloo Tammudu;
+    background: black;
+    width: 150px;
+    border-radius: 1pc;
+    margin-left: 6%;
+}
+.user6 h5{
+    padding: 10%;
+    text-align: center;
+}
+.user7{
+    font-family: Baloo Tammudu;
+    background: black;
+    width: 150px;
+    border-radius: 1pc;
+    margin-left: 6%;
+}
+.user7 h5{
+    padding: 10%;
+    text-align: center;
+}
+.users{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 250px;
+    left: 200px;
+}
+.dataCardUser{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    left: 200px;
+    top: 216px;
+}
+.numberCard2{
+    font-family: Baloo Tammudu;
+    margin-left: 4%;
+    color: white;
+}
+.numberCard3{
+    font-family: Baloo Tammudu;
+    margin-left: 13%;
+    color: white;
+}
+.numberCard4{
+    font-family: Baloo Tammudu;
+    margin-left: 14%;
+    color: white;
+}
+.numberCard5{
+    font-family: Baloo Tammudu;
+    margin-left: 13%;
+    color: white;
+}
+.numberCard6{
+    font-family: Baloo Tammudu;
+    margin-left: 13%;
+    color: white;
+}
+.numberCard7{
+    font-family: Baloo Tammudu;
+    margin-left: 13%;
+    color: white;
+}
