@@ -1,0 +1,48 @@
+body {
+    background: url("../image/Juego.png") no-repeat;
+    background-size: cover;
+}
+.imageCard {
+    background: url("../image/espacio.png") no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 200px;
+    margin-top: 3%;
+    margin-left: 5%;
+    border: 3px solid;
+}
+.imageCard img{
+    width: 120px;
+    height: 198px;
+    margin-left: 25%;
+}
+.cardBox{
+    background: #FFEAE2;
+    border:2px solid #F0D28F;
+    width:200px;
+    height: 100px;
+    box-shadow: 0px 0px 25px rgb(0, 0, 0) inset;
+}
+.greenCard{
+    background: #46BB40;
+    border-bottom-left-radius: 2pc;
+    border-bottom-right-radius: 2pc;
+}
+.card{
+    padding: 1%;
+}
+.headCard{
+    border:1px solid;
+    background: #BFF5BF;
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 2.5%;
+    height: 22px;
+    border-radius: 1pc;
+}
+.cardBox hr{
+    color: grey;
+    border: 1px solid;
+    width: 90%;
+}
+

@@ -1,0 +1,68 @@
+body {
+    background: url("../image/Pantalla\ Principal.png") no-repeat;
+    background-size: cover;
+}
+.bangers-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+.navegador{
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+.navegador_boton{
+    font-size:70px;
+}
+.titulo{
+    padding-left:25% ;
+}
+.cantidad{
+    width: 100%;
+}
+.flow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cajaCantidad h1{
+    color:white; 
+    font-family: "Bangers", system-ui;
+}
+.cajaCantidad{
+    font-family: "Bangers", system-ui;
+    font-size: 30px;
+    padding-left: 20%;
+}
+.cantidad input{
+    width: 3%;
+    height: 45px;
+    margin-left:1% ;
+    background-color: #BFF5BF;
+    border-style: none;
+}
+.jugadores{
+    color: #ffffff;
+    padding-top: 30px;
+    font-size:20px;
+    font-family: Baloo Tammudu;
+    padding-left: 1%;
+}
+.jugadores input{
+    border-radius: 3pc;
+    height: 35px;
+    width: 100%;
+    border-style: none;
+    background-color: #BFF5BF;
+}
+@font-face {
+  font-family: 'Baloo Tammudu';
+  src: url("../fonts/BalooTammudu-Regular.ttf");
+}
+.jugar h1{
+    font-size: 50px;
+    color: #CDDB24;
+    position: absolute;
+    left: 45%;
+    bottom:300px;
+    cursor: pointer;
+}
