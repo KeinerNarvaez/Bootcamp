@@ -12,7 +12,7 @@ public class Player {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_Player")
+    @Column(name = "idPlayer")
     private int idPlayer;
 
     @Column(name = "name", length = 50, nullable = false)

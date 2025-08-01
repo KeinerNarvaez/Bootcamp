@@ -1,10 +1,9 @@
 package com.BootCamp.Juego.Ranking;
 
-import com.BootCamp.Juego.Player.Player;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,5 +17,17 @@ public class RankingController {
     @GetMapping("/")
     public List<Ranking> getAllRanking(){
         return rankingService.getRankings();
+    }
+
+    @PostMapping("/create")
+    public ResponseEntity<Object> cratePlayer(@RequestBody DtoRanking dtoRanking){
+        var message = rankingService.createRanking(dtoRanking);
+        return ResponseEntity.status(HttpStatus.CREATED).body(message);
+    }
+
+    @PutMapping("/update")
+    public ResponseEntity<Object> updateRanking(@RequestBody DtoRanking dtoRanking){
+        var message = rankingService.updateRanking(dtoRanking);
+        return ResponseEntity.status(HttpStatus.OK).body(message);
     }
 }

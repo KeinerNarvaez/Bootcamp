@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 public class DtoRanking {
 
     private int idRanking;
-    private int game;
-    private int player;
+    private int idGame;
+    private int idPlayer;
     private int wins;
     private int score;
 }

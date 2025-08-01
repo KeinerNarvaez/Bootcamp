@@ -7,8 +7,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,15 +15,15 @@ public class Ranking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_Ranking")
+    @Column(name = "idRanking")
     private int idRanking;
 
     @ManyToOne
-    @JoinColumn(name = "id_Game")
-    public Game idgame;
+    @JoinColumn(name = "idGame")
+    public Game idGame;
 
     @ManyToOne
-    @JoinColumn(name = "id_Player")
+    @JoinColumn(name = "idPlayer")
     public Player idplayer;
 
     @Column(name = "Wins")
