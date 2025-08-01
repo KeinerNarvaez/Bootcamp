@@ -1,4 +1,6 @@
 package com.BootCamp.Juego.Deck;
 
-public interface IDeck {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IDeck extends JpaRepository<Deck, Integer> {
 }

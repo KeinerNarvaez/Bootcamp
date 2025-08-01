@@ -22,13 +22,16 @@ public class Ranking {
 
     @ManyToOne
     @JoinColumn(name = "id_Game")
-    public Game game;
+    public Game idgame;
 
     @ManyToOne
     @JoinColumn(name = "id_Player")
-    public Player player;
+    public Player idplayer;
 
     @Column(name = "Wins")
     private int wins;
+
+    @Column(name = "score")
+    private int score;
 
 }

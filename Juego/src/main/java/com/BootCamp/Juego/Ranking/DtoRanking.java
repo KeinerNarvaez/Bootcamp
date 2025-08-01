@@ -8,4 +8,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DtoRanking {
+
+    private int idRanking;
+    private int game;
+    private int player;
+    private int wins;
+    private int score;
 }

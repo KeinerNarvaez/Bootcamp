@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 public class DtoGame {
 
     private int idGame;
-    private int player;
+    private int rounds;
     private int deck;
-    private int score;
 }

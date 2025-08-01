@@ -1,6 +1,5 @@
 package com.BootCamp.Juego.Card;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

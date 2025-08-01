@@ -15,19 +15,12 @@ public class Game {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_Game")
+    @Column(name = "idGame")
     private int idGame;
 
-    @ManyToOne
-    @JoinColumn(name = "id_Player")
-    public Player player;
-
     @OneToOne
-    @JoinColumn(name = "id_Deck")
-    public Deck deck;
-
-    @Column(name = "score")
-    private int score;
+    @JoinColumn(name = "idDeck")
+    public Deck idDeck;
 
     @Column(name = "rounds")
     private int rounds;

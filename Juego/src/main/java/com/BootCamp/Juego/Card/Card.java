@@ -13,7 +13,7 @@ public class Card {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_Card", nullable = false)
+    @Column(name = "idCard", nullable = false)
     private int idCard;
 
     @Column(name = "name", length = 50, nullable = false)
