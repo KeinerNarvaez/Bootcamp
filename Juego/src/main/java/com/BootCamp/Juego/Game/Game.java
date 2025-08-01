@@ -1,7 +1,6 @@
 package com.BootCamp.Juego.Game;
 
 import com.BootCamp.Juego.Deck.Deck;
-import com.BootCamp.Juego.Player.Player;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

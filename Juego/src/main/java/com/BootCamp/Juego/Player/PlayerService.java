@@ -1,8 +1,6 @@
 package com.BootCamp.Juego.Player;
 
 import com.BootCamp.Juego.Response.ResponseDto;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -37,10 +35,4 @@ public class PlayerService {
         }
     }
 
-    private DtoPlayer converToDto(Player player) {
-        DtoPlayer dtoPlayer = new DtoPlayer();
-        dtoPlayer.setIdPlayer((int) player.getIdPlayer());
-        dtoPlayer.setName(player.getName());
-        return dtoPlayer;
-    }
 }

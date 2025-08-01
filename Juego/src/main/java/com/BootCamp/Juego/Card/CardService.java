@@ -39,17 +39,4 @@ public class CardService {
             return new ResponseDto("ERROR", "Error creating card");
         }
     }
-
-    private DtoCard convertToDtoCard(Card card) {
-        DtoCard dtoCard = new DtoCard();
-        dtoCard.setName(card.getName());
-        dtoCard.setImageUrl(card.getImageUrl());
-        dtoCard.setSt_Heal(card.getSt_Heal());
-        dtoCard.setSt_Speed(card.getSt_Speed());
-        dtoCard.setSt_Defense(card.getSt_Defense());
-        dtoCard.setSt_Power(card.getSt_Power());
-        dtoCard.setSt_Intelligence(card.getSt_Intelligence());
-        dtoCard.setSt_Total(card.getSt_Total());
-        return dtoCard;
-    }
 }

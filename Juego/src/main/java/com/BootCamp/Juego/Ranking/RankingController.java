@@ -25,9 +25,4 @@ public class RankingController {
         return ResponseEntity.status(HttpStatus.CREATED).body(message);
     }
 
-    @PutMapping("/update")
-    public ResponseEntity<Object> updateRanking(@RequestBody DtoRanking dtoRanking){
-        var message = rankingService.updateRanking(dtoRanking);
-        return ResponseEntity.status(HttpStatus.OK).body(message);
-    }
 }

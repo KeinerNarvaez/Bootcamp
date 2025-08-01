@@ -36,11 +36,4 @@ public class DeckService {
     }
 
 
-    private DtoDeck converToDtoDeck(Deck deck) {
-        DtoDeck dtoDeck = new DtoDeck();
-        dtoDeck.setIdDeck(deck.getIdDeck());
-        dtoDeck.setIdCard(dtoDeck.getIdCard());
-        dtoDeck.setNombre(deck.getName());
-        return dtoDeck;
-    }
 }
