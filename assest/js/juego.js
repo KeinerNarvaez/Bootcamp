@@ -42,9 +42,6 @@ switch (local.length) {
     default:
         break;
 }
-if (localStorage.getItem("jugadores")==null){
-    location.href = "../index.html";
-}
 function numberCard(number) {
     let value= document.createElement("div");
     value.className="numberCard"+number;
