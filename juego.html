@@ -1,267 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnicard</title>
     <link rel="stylesheet" href="./assest/css/juego.css">
     <link rel="stylesheet" href="./assest/bootstrap-5.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assest/image/logo.png" type="image/x-icon">
 </head>
-<body>   
-    <div class="dataCardUser" id="dataCardUser">
 
-    </div> 
-    <div class="users" id="users">
-            
+<!-- Modal para elegir categoría -->
+<div class="modal fade" id="modalCategorias" tabindex="-1" aria-labelledby="modalCategoriasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCategoriasLabel">Elige una categoría</h5>
+            </div>
+            <div class="modal-body d-flex flex-wrap justify-content-center gap-2">
+                <button class="btn btn-warning btn-categoria" data-categoria="st_heal">Vida</button>
+                <button class="btn btn-warning btn-categoria" data-categoria="st_defense">Defensa</button>
+                <button class="btn btn-warning btn-categoria" data-categoria="st_power">Fuerza</button>
+                <button class="btn btn-warning btn-categoria" data-categoria="st_inteligence">Inteligencia</button>
+                <button class="btn btn-warning btn-categoria" data-categoria="st_speed">Velocidad</button>
+            </div>
+        </div>
     </div>
+</div>
+
+<body>
+    <div class="dataCardUser" id="dataCardUser"></div>
+
+    <div class="users" id="users"></div>
+
     <div class="data">
         <h1>Ronda 1</h1>
         <div class="user1" id="user1">
-            <h5>brayan</h5> 
+            <h5>Jugador</h5>
         </div>
-    </div>
-
-    <div class="cards">
-        <div class="card bg-black border border-white" style="width: 16rem; z-index:1; position: absolute;">
-            <div class="greenCard">
-                <div class="headCard">
-                    <p>Alien X</p>
-                </div>
-                <div class="imageCard">
-                    <img src="./assest/image/aliens/Alien_X_.png"  alt="">
-                </div>
-                <div class="headCard"></div>
-                <div class="card-body">
-                    <div class="cardBox">
-                        <hr>
-                        <div class="stast">
-
-                        </div>
-                        <div class="flow">
-                            <p>Vida: 500</p>
-                            <p>Defensa: 500</p>
-
-                            <p>fuerza: 500</p>
-                            <p>Inteligencia: 500</p>
-
-                            <p>Velocidad: 500</p>
-                            <p>Total: 500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <div class="card bg-black border border-white" style="width: 16rem; z-index: 2; position: absolute; left: 70px;">
-            <div class="greenCard">
-                <div class="headCard">
-                    <p>Alien X</p>
-                </div>
-                <div class="imageCard">
-                    <img src="./assest/image/aliens/Alien_X_.png"  alt="">
-                </div>
-                <div class="headCard"></div>
-                <div class="card-body">
-                    <div class="cardBox">
-                        <hr>
-                        <div class="stast">
-
-                        </div>
-                        <div class="flow">
-                            <p>Vida: 500</p>
-                            <p>Defensa: 500</p>
-
-                            <p>fuerza: 500</p>
-                            <p>Inteligencia: 500</p>
-
-                            <p>Velocidad: 500</p>
-                            <p>Total: 500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-         <div class="card bg-black border border-white" style="width: 16rem; z-index: 3; position: absolute; left: 140px;">
-            <div class="greenCard">
-                <div class="headCard">
-                    <p>Alien X</p>
-                </div>
-                <div class="imageCard">
-                    <img src="./assest/image/aliens/Alien_X_.png"  alt="">
-                </div>
-                <div class="headCard"></div>
-                <div class="card-body">
-                    <div class="cardBox">
-                        <hr>
-                        <div class="stast">
-
-                        </div>
-                        <div class="flow">
-                            <p>Vida: 500</p>
-                            <p>Defensa: 500</p>
-
-                            <p>fuerza: 500</p>
-                            <p>Inteligencia: 500</p>
-
-                            <p>Velocidad: 500</p>
-                            <p>Total: 500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-                <div class="card bg-black border border-white" style="width: 16rem; z-index: 4; position: absolute; left: 210px;">
-            <div class="greenCard">
-                <div class="headCard">
-                    <p>Alien X</p>
-                </div>
-                <div class="imageCard">
-                    <img src="./assest/image/aliens/Alien_X_.png"  alt="">
-                </div>
-                <div class="headCard"></div>
-                <div class="card-body">
-                    <div class="cardBox">
-                        <hr>
-                        <div class="stast">
-
-                        </div>
-                        <div class="flow">
-                            <p>Vida: 500</p>
-                            <p>Defensa: 500</p>
-
-                            <p>fuerza: 500</p>
-                            <p>Inteligencia: 500</p>
-
-                            <p>Velocidad: 500</p>
-                            <p>Total: 500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-            <div class="card bg-black border border-white" style="width: 16rem; z-index: 5; position: absolute; left: 280px;">
-            <div class="greenCard">
-                <div class="headCard">
-                    <p>Alien X</p>
-                </div>
-                <div class="imageCard">
-                    <img src="./assest/image/aliens/Alien_X_.png"  alt="">
-                </div>
-                <div class="headCard"></div>
-                <div class="card-body">
-                    <div class="cardBox">
-                        <hr>
-                        <div class="stast">
-
-                        </div>
-                        <div class="flow">
-                            <p>Vida: 500</p>
-                            <p>Defensa: 500</p>
-
-                            <p>fuerza: 500</p>
-                            <p>Inteligencia: 500</p>
-
-                            <p>Velocidad: 500</p>
-                            <p>Total: 500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-                <div class="card bg-black border border-white" style="width: 16rem; z-index: 6; position: absolute; left: 350px;">
-            <div class="greenCard">
-                <div class="headCard">
-                    <p>Alien X</p>
-                </div>
-                <div class="imageCard">
-                    <img src="./assest/image/aliens/Alien_X_.png"  alt="">
-                </div>
-                <div class="headCard"></div>
-                <div class="card-body">
-                    <div class="cardBox">
-                        <hr>
-                        <div class="stast">
-
-                        </div>
-                        <div class="flow">
-                            <p>Vida: 500</p>
-                            <p>Defensa: 500</p>
-
-                            <p>fuerza: 500</p>
-                            <p>Inteligencia: 500</p>
-
-                            <p>Velocidad: 500</p>
-                            <p>Total: 500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-                <div class="card bg-black border border-white" style="width: 16rem; z-index: 7; position: absolute; left: 420px;">
-            <div class="greenCard">
-                <div class="headCard">
-                    <p>Alien X</p>
-                </div>
-                <div class="imageCard">
-                    <img src="./assest/image/aliens/Alien_X_.png"  alt="">
-                </div>
-                <div class="headCard"></div>
-                <div class="card-body">
-                    <div class="cardBox">
-                        <hr>
-                        <div class="stast">
-
-                        </div>
-                        <div class="flow">
-                            <p>Vida: 500</p>
-                            <p>Defensa: 500</p>
-
-                            <p>fuerza: 500</p>
-                            <p>Inteligencia: 500</p>
-
-                            <p>Velocidad: 500</p>
-                            <p>Total: 500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-            <div class="card bg-black border border-white" style="width: 16rem; z-index: 8; position: absolute; left: 490px;">
-            <div class="greenCard">
-                <div class="headCard">
-                    <p>Alien X</p>
-                </div>
-                <div class="imageCard">
-                    <img src="./assest/image/aliens/Alien_X_.png"  alt="">
-                </div>
-                <div class="headCard"></div>
-                <div class="card-body">
-                    <div class="cardBox">
-                        <hr>
-                        <div class="stast">
-
-                        </div>
-                        <div class="flow">
-                            <p>Vida: 500</p>
-                            <p>Defensa: 500</p>
-
-                            <p>fuerza: 500</p>
-                            <p>Inteligencia: 500</p>
-
-                            <p>Velocidad: 500</p>
-                            <p>Total: 500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  
+        <!-- Fuera del div de nombres -->
+<div id="cartaSeleccionadaContainer" class="carta-seleccionada-container"></div>
 
     </div>
-    
-<script src="./assest/js/juego.js"></script>
+
+    <div class="cards" id="cartasContainer"></div>
+
+    <script src="./assest/js/juego.js"></script>
+    <script src="./assest/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
