@@ -109,6 +109,11 @@ body {
     gap: 30px;
     z-index: 5;
 }
+.cardBox hr{
+    padding: 0px;
+    margin: 6px;
+    margin-top: 15px;
+}
 
 .data{
     color: #ffffff;
