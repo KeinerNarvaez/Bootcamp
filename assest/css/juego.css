@@ -255,7 +255,10 @@ body {
     transform: scale(1.1) translateY(-10px);
     box-shadow: 0 0 20px 5px lime;
 }
-
+i {
+    color: white;
+    font-size: 60px;
+}
 
 
 
