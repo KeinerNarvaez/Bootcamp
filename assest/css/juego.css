@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url("../image/Juego.png") no-repeat center center fixed;
+    background: url("../image/Juego.png") no-repeat ;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -136,6 +136,7 @@ body {
     background: black;
     width: 150px;
     border-radius: 1pc;
+    margin-left: 0.5%;
     
 }
 .user2 h5{
@@ -204,7 +205,7 @@ body {
     flex-wrap: wrap;
     position: fixed;
     width: 100%;
-    top: 250px;
+    top: 160px;
     color: white;
     left: 200px;
 }
@@ -215,7 +216,7 @@ body {
     width: 100%;
     left: 200px;
     
-    top: 216px;
+    top: 120px;
 }
 .numberCard2{
     font-family: Baloo Tammudu;
