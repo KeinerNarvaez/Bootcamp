@@ -20,7 +20,7 @@ public class Card {
     private String name;
 
     @Lob
-    @Column(name = "image_url", length = 400, nullable = false)
+    @Column(name = "image_url", length = 800, nullable = false)
     private String imageUrl;
 
     @Column(name = "st_Heal", nullable = false)

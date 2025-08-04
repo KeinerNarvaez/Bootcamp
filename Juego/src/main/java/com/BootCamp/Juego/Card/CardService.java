@@ -12,7 +12,7 @@ import java.util.List;
 @Slf4j
 public class CardService {
 
-    private ICard CardRepository;
+    private final ICard CardRepository;
 
     public List<Card> getCards() {
         log.debug("Getting card list");
