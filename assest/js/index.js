@@ -42,14 +42,14 @@ const crearJugadores = async (name) => {
     }
 };
 
-const obtenerJugadores = async () => {
+const obtenerJugadores = async (name) => {
     try {
         const respuesta = await fetch(ApiUrl + "/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            // body: JSON.stringify({name})
+            body: JSON.stringify({name})
         });
         data = await respuesta.json();
     } catch (Error) {
@@ -76,7 +76,7 @@ const obtenerJugadores = async () => {
                 console.log(array[index]);
                 crearJugadores(array[index])    
             }
-            location.href="../juego.html";
+            location.href="../juego.html"
             } catch (exception) {
                 console.error("Error al crear los jugadores: ", exception);
                 alert("Por favor, complete todos los campos correctamente.");

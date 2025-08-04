@@ -62,7 +62,7 @@ const obtenerCartas = async (image_url,name,st_defense,st_heal,st_inteligence,st
     // Barajar y repartir cartas
     function repartirCartas(cartas, numJugadores) {
         const baraja = [...cartas].sort(() => Math.random() - 0.5);
-        const cartasPorJugador = Math.max(8, Math.floor(baraja.length / numJugadores));
+        const cartasPorJugador = Math.max(8);
         const mazos = [];
 
         for (let i = 0; i < numJugadores; i++) {
@@ -76,10 +76,11 @@ const obtenerCartas = async (image_url,name,st_defense,st_heal,st_inteligence,st
     const mazos = repartirCartas(todasLasCartas, totalJugadores);
 
     // Crear UI de jugadores
-    for (let i = 1; i < jugadores.length; i++) {
+    for (let i = 0; i < jugadores.length; i++) {
         const number = i + 1;
         const user = document.createElement("div");
         user.className = `user${number}`;
+        user.setAttribute("id","user"+number)
         user.innerHTML = `<h5>${jugadores[i]}</h5>`;
         document.getElementById("users").appendChild(user);
 
@@ -88,10 +89,8 @@ const obtenerCartas = async (image_url,name,st_defense,st_heal,st_inteligence,st
         count.innerHTML = `<h2>${mazos[i].length}</h2>`;
         document.getElementById("dataCardUser").appendChild(count);
     }
-
     function iniciarRonda() {
-    mostrarMensaje(`Turno de: ${jugadores[turnoActual]}`);
-
+    mostrarMensajeTurno(`Turno de: ${jugadores[turnoActual]}`);
     const contenedor = document.getElementById("cartasContainer");
     contenedor.innerHTML = "";
 
@@ -111,11 +110,14 @@ const obtenerCartas = async (image_url,name,st_defense,st_heal,st_inteligence,st
 
     cartas.forEach((carta, index) => {
         const div = document.createElement("div");
-        div.className = "card bg-black border border-white carta-hover";
+        div.className = "card";
+        div.style.zIndex=index
         div.style.width = "16rem";
-        div.style.margin = "10px";
-
+        div.style.margin = "30px";
+        div.style.backgroundColor="#46bb4000"
+        div.style.border="#46bb4000"
         div.innerHTML = `
+            <div class="card bg-black border border-white carta-hover" style="z-index:${index}; ">
             <div class="greenCard">
                 <div class="headCard"><p>${carta.name}</p></div>
                 <div class="imageCard"><img src="${carta.image_url}" alt="${carta.name}"></div>
@@ -133,6 +135,7 @@ const obtenerCartas = async (image_url,name,st_defense,st_heal,st_inteligence,st
                     </div>
                 </div>
             </div>
+        </div>    
         `;
         contenedor.appendChild(div);
     });
@@ -223,15 +226,29 @@ const obtenerCartas = async (image_url,name,st_defense,st_heal,st_inteligence,st
             categoriaSeleccionada = null;
             iniciarRonda();
         }, 3000);
+
+
     }
 
     function mostrarMensaje(texto) {
         const mensaje = document.createElement("div");
+        mensaje.style.display="block"
         mensaje.className = "alert alert-dark text-center fs-3 position-fixed top-50 start-50 translate-middle";
         mensaje.innerText = texto;
         document.body.appendChild(mensaje);
-        setTimeout(() => mensaje.remove(), 2000);
+        setTimeout(() => mensaje.remove(), 4000);
     }
+
+    function mostrarMensajeTurno(texto) {
+        const mensaje = document.createElement("div");
+        mensaje.className = "alert alert-dark text-center fs-3 position-fixed bottom-100 translate-middle";
+        mensaje.innerText = texto;
+
+        document.body.appendChild(mensaje);
+        setTimeout(() => mensaje.remove(), 4000);
+    }
+    
 
     iniciarRonda();
 });
+document.getElementById().addEventListener("click",)

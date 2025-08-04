@@ -4918,7 +4918,11 @@ textarea.form-control-lg {
 }
 
 .alert-dark {
-  --bs-alert-color: var(--bs-dark-text-emphasis);
+  border-radius: 20px;
+  border-color: #000;
+  background-color: #000;
+  font-family: Baloo Tammudu;
+  --bs-alert-color: var(--bs-white);
   --bs-alert-bg: var(--bs-dark-bg-subtle);
   --bs-alert-border-color: var(--bs-dark-border-subtle);
   --bs-alert-link-color: var(--bs-dark-text-emphasis);
@@ -7449,7 +7453,8 @@ textarea.form-control-lg {
 }
 
 .bottom-100 {
-  bottom: 100% !important;
+  bottom: 5% !important;
+  left: 12% !important;
 }
 
 .start-0 {

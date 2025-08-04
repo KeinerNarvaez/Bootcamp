@@ -17,7 +17,7 @@
 </head>
 
 <!-- Modal para elegir categoría -->
-<div class="modal fade" id="modalCategorias" tabindex="-1" aria-labelledby="modalCategoriasLabel" aria-hidden="true">
+<div class="modal fade" id="modalCategorias" data-bs-backdrop="static" tabindex="-1" aria-labelledby="modalCategoriasLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-dark text-white">
             <div class="modal-header">
@@ -41,7 +41,8 @@
     <div class="users" id="users"></div>
 
     <div class="data">
-        <h1>Ronda 1</h1>
+        <h1 id="ronda">Ronda 1</h1>
+        <h2 class="numberCard1" id="numberCard1"></h2>
         <div class="user1" id="user1">
             <h5>Jugador</h5>
         </div>

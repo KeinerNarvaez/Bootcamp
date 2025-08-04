@@ -14,14 +14,14 @@ public class CordsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
 
-        config.addAllowedOrigin("http://127.0.0.1:5500");
+        config.addAllowedOrigin("http://localhost:3000");
 
         config.addAllowedMethod("GET");
         config.addAllowedMethod("POST");
         config.addAllowedMethod("PUT");
 
-        config.addAllowedHeader("Authorization");
-        config.addAllowedHeader("Content-Type");
+        config.addAllowedHeader("*");
+        config.addAllowedHeader("*");
 
         config.setAllowCredentials(true);
         source.registerCorsConfiguration("/**", config);

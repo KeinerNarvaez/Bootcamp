@@ -23,14 +23,14 @@ body {
 }
 .imageCard img{
     width: 120px;
-    height: 198px;
-    margin-left: 25%;
+    height: 193px;
+    margin-left: 15%;
 }
 .cardBox{
     background: #FFEAE2;
     border:2px solid #F0D28F;
-    width:190px;
-    height: 100px;
+    width: auto;
+    height: auto;
     box-shadow: 0px 0px 25px rgb(0, 0, 0) inset;
 }
 .greenCard{
@@ -40,8 +40,8 @@ body {
 }
 .card{
     cursor: pointer;
+    width: 200px;
     padding: 1%;
-    
 }
 .headCard{
     border:1px solid;
@@ -82,20 +82,18 @@ body {
 .cards {
     position: fixed;
     left: 50%;
-    bottom: 40px;
+    width: 40%;
+    bottom: -200px;
     transform: translateX(-50%);
     display: flex;
     align-items: flex-end;
-    height: 260px;
-    z-index: 10;
+    height: auto;
     pointer-events: none;
 }
 
 .cards .card {
     position: relative;
-    margin-left: -120px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 1;
     pointer-events: auto;
     transform-origin: bottom center;
 }
@@ -126,6 +124,9 @@ body {
     font-size: 100px;
 }
 .user1{
+    position: fixed;
+    top: 400px;
+    left: -240px;
     font-family: Baloo Tammudu;
     background: black;
     width: 150px;
@@ -142,7 +143,6 @@ body {
     width: 150px;
     border-radius: 1pc;
     margin-left: 0.5%;
-    
 }
 .user2 h5{
     padding: 10%;
@@ -258,13 +258,22 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .carta-hover:hover {
-    transform: scale(1.1) translateY(-10px);
+    transform: scale(1.1) translateY(-300px) translateX(-50px);
     box-shadow: 0 0 20px 5px lime;
 }
 i {
+    position: fixed;
     color: white;
     font-size: 60px;
 }
-
+.numberCard1{
+    color: white;
+    position: fixed;
+    top: 350px;
+    left: -170px;
+    font-family: Baloo Tammudu;
+    border-radius: 1pc;
+    margin-left: 17%;
+}
 
 
