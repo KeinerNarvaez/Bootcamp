@@ -76,7 +76,7 @@ const obtenerJugadores = async (name) => {
                 console.log(array[index]);
                 crearJugadores(array[index])    
             }
-            location.href="../juego.html"
+            location.href="../Frontend/juego.html"
             } catch (exception) {
                 console.error("Error al crear los jugadores: ", exception);
                 alert("Por favor, complete todos los campos correctamente.");
