@@ -230,8 +230,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="cardBox">
                     <hr>
                     <div class="flow">
-                        <p>Vida: ${carta.st_heal}<p>
-                      p>Defensa: $cara.st_defense</p
+                        <p>Vida: ${carta.st_heal}</p>
+                      <p>Defensa: ${carta.st_defense}</p>
                        <p>Fuerza: ${carta.st_power}</p>
                         <p>Inteligencia: ${carta.st_intelligence}</p>
                         <p>Velocidad: ${carta.st_speed}</p>
