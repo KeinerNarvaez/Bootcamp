@@ -276,4 +276,17 @@ i {
     margin-left: 17%;
 }
 
+.ranking-container {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  border: 2px solid white;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+
 

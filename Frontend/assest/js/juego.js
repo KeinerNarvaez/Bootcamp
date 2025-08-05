@@ -271,13 +271,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function mostrarRankingFinal() {
-        const ranking = rondasGanadas
-            .map((ganadas, i) => ({ nombre: nombresJugadores[i], rondas: ganadas || 0 }))
-            .sort((a, b) => b.rondas - a.rondas);
+        const rankingFinal = document.getElementById("rankingFinal");
+        rankingFinal.style.display = "block";
+        rankingFinal.innerHTML = `<h1>Ranking final</h1>`;
 
-        const mensaje = ranking.map((r, i) => `${i + 1}. ${r.nombre} - ${r.rondas} ronda(s) ganadas`).join("\n");
+        const jugadoresFinal = jugadores.map((jugador, i) => {
+            const jugadorFinal = document.createElement("div");
+            jugadorFinal.className = "jugador";
+            jugadorFinal.innerHTML = `
+            <div class="jugador-info">
+                <h3>${jugador}</h3>
+                <p>Rondas ganadas: ${rondasGanadas[i]}</p>
+            </div>
+            
+            </div>
+          `;
 
-        alert(" RANKING FINAL \n\n" + mensaje);
+            return jugadorFinal;
+        });
+
+        jugadoresFinal.forEach(jugadorFinal => rankingFinal.appendChild(jugadorFinal));
+        console.log(jugadoresFinal);
     }
 
 
